@@ -50,9 +50,9 @@ public class Eggs {
     // It should return the full explanation string to print.
 
     public static String buildExplanation(int eggs, int dozens, int looseEggs, double totalCost) {
-        return "You ordered " + eggs + "eggs. That's " + dozens + "dozen at $"
-                + String.format("%.2f", PRICE_PER_DOZEN) + "per dozen and " + looseEggs + "loose eggs at $" +
-                String.format("%.2f", PRICE_PER_LOOSE_EGG) + "each for a total of $" + totalCost + ".";
+        return "You ordered " + eggs + " eggs. That's " + dozens + " dozen at $"
+                + String.format("%.2f", PRICE_PER_DOZEN) + " per dozen and " + looseEggs + " loose eggs at $" +
+                String.format("%.2f", PRICE_PER_LOOSE_EGG) + " each for a total of $" + totalCost + ".";
     }
 
     public static void main(String[] args) {
@@ -81,9 +81,7 @@ public class Eggs {
 
         // TODO 8: Print the explanation
 
-        System.out.println("Dozens: " + dozens);
-        System.out.println("Loose Eggs: " + looseEggs);
-        System.out.println("Total Cost: " + totalCost);
+        System.out.println(buildExplanation(eggs, dozens, looseEggs, totalCost));
 
         input.close();
     }
